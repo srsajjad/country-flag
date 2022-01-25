@@ -44,9 +44,10 @@ button {
   height: 35px;
   margin-bottom: 3px;
   border-radius: 4px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+}
+
+button > span {
+  margin-right: 7px;
 }
 
 .combobox {
