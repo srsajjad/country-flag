@@ -54,11 +54,11 @@ export const CountrySelect = ({ countryCode = "us", className, onChange }) => {
     if (initialItem) {
       selectItem(initialItem);
     }
-  }, [dataMap]);
+  }, [dataMap, countryCode, selectItem]);
 
   useEffect(() => {
     onChange(selectedItem);
-  }, [selectedItem]);
+  }, [selectedItem, onChange]);
 
   return (
     <div className={className}>
